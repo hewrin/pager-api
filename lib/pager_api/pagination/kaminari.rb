@@ -14,7 +14,7 @@ module PagerApi
 
         pagination_headers(paginated_collection) if PagerApi.include_pagination_headers?
 
-        render options
+        return options
       end
 
       private
